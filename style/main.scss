@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+.container{
+    max-width: 1210px;
+    margin: auto;
+
+    header{
+        max-width: 1210px;
+       
+      
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+           align-items: center;
+            padding-inline: 30px;
+            background-color: rgb(42, 84, 84);
+            color: white;
+
+
+            .navigation{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                max-width: 800px;
+                gap: 30px;
+
+                .message{
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                }
+
+                .person{
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                }
+            }
+
+            .hamburger-menu{
+                display: none;
+            }
+        }
+    }
+
+
+    main{
+        display: flex;
+        max-width: 1210px;
+        padding-inline: 25px;
+        flex-wrap: wrap;
+        gap: 10px;
+        background-color: rgb(215, 210, 204);
+        padding-block: 20px;
+
+
+    
+
+            margin: auto;
+           
+        
+
+        .cards{
+            display: grid;
+            gap: 10px;
+            margin-block-end: 25px;
+            background-color: white;
+            box-shadow: 10px;
+            border-radius: 10px 10px 10px 10px;
+            padding-block-start: 15px;
+
+            
+
+
+            .product-name{
+                font-size: 20px;
+                padding-inline: 10px;
+            }
+
+            .product-price{
+                font-size: 16px;
+                font-weight: 600;
+                padding-inline: 10px;
+            }
+
+            .product-date{
+                font-size: 12px;
+                margin-block-end: 15px;
+                padding-inline: 10px;
+            }
+        }
+    
+    }
+
+   
+}
+
+@media screen and (max-width: 780px){
+    .navigation{
+     display: none;
+    }
+    .hamburger-menu{
+     display: block;
+    }
+     }
